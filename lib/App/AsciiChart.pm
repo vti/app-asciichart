@@ -26,15 +26,12 @@ sub plot {
 
     my $range = abs( $min - $max );
 
-    my $offset = 3;
     my $height = $range;
     my $ratio  = $height / $range;
 
     my $min2 = int( $min * $ratio );
     my $max2 = int( $max * $ratio );
     my $rows = abs( $max2 - $min2 );
-
-    my $width = @$series + $offset;
 
     my $result = [];
 
