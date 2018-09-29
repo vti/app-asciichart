@@ -12,13 +12,13 @@ App::AsciiChart - Simple Ascii Chart
 
 App::AsciiChart is a port to Perl of [https://github.com/kroitor/asciichart](https://github.com/kroitor/asciichart) project.
 
-    7| ...╭╮...
-    6| ...││...
-    5| ╭╮.│╰╮..
-    4| ││.│.│..
-    3| ││.│.╰╮.
-    2| ╯╰─╯..│.
-    1| ......╰.
+    7┤...╭╮...
+    6┤...││...
+    5┤╭╮.│╰╮..
+    4┤││.│.│..
+    3┤││.│.╰╮.
+    2┼╯╰─╯..│.
+    1┤......╰.
 
 There is also a command line script [asciichart](https://metacpan.org/pod/asciichart).
 
