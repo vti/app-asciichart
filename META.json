@@ -52,6 +52,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/vti/app-asciichart/issues"
+      },
+      "homepage" : "https://github.com/vti/app-asciichart",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/vti/app-asciichart.git",
+         "web" : "https://github.com/vti/app-asciichart"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:VTI",
    "x_serialization_backend" : "JSON::PP version 2.27400_02"
