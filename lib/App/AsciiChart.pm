@@ -40,7 +40,11 @@ sub plot {
     }
 
     for my $row ( 0 .. $rows ) {
-        $result->[$row]->[0] = ( sprintf "%${padding}s", $max2 - $ratio * $row ) . '| ';
+        $result->[$row]->[0] =
+          ( sprintf "%${padding}s", $max2 - $ratio * $row )
+          . ( $row == $rows - int( $series->[0] * $ratio ) + $min2
+            ? '┼'
+            : '┤' );
 
         for ( my $x = 0 ; $x < @$series - 1 ; $x++ ) {
             my $y0 = int( $series->[$x] * $ratio ) - $min2;
@@ -94,13 +98,13 @@ App::AsciiChart - Simple Ascii Chart
 
 App::AsciiChart is a port to Perl of L<https://github.com/kroitor/asciichart> project.
 
-    7| ...╭╮...
-    6| ...││...
-    5| ╭╮.│╰╮..
-    4| ││.│.│..
-    3| ││.│.╰╮.
-    2| ╯╰─╯..│.
-    1| ......╰.
+    7┤...╭╮...
+    6┤...││...
+    5┤╭╮.│╰╮..
+    4┤││.│.│..
+    3┤││.│.╰╮.
+    2┼╯╰─╯..│.
+    1┤......╰.
 
 There is also a command line script L<asciichart>.
 

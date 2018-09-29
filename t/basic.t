@@ -10,9 +10,9 @@ subtest 'basic test' => sub {
     my $plot = $chart->plot( [ 1, 2, 3 ] );
 
     is $plot, <<'EOF';
-3| .╭.
-2| ╭╯.
-1| ╯..
+3┤.╭.
+2┤╭╯.
+1┼╯..
 EOF
 };
 
