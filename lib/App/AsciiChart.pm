@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use List::Util qw(min max);
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 sub new {
     my $class = shift;
