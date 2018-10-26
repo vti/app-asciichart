@@ -92,7 +92,7 @@ App::AsciiChart - Simple Ascii Chart
 
     use App::AsciiChart;
 
-    App::AsciiChart->new->plot([1, 5, 3, 9, 10, 12]);
+    print App::AsciiChart->new->plot([1, 5, 3, 9, 10, 12]);
 
 =head1 DESCRIPTION
 
