@@ -115,7 +115,7 @@ App::AsciiChart is a port to Perl of L<https://github.com/kroitor/asciichart> pr
      2| │.....
      1| ╯.....
 
-There is also a command line script L<asciichart>.
+There is also a command line script L<asciichart|https://github.com/vti/app-asciichart/blob/master/script/asciichart>.
 
 =head1 LICENSE
 
