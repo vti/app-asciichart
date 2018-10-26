@@ -9,7 +9,9 @@ our $VERSION = "0.03";
 sub new {
     my $class = shift;
 
-    my $self = {};
+    my $self = {@_};
+    $self->{bg_char} ||= '.';
+
     bless $self, $class;
 
     return $self;
@@ -35,8 +37,10 @@ sub plot {
 
     my $result = [];
 
+    my $bg_char = substr($self->{bg_char}, 0, 1);
+
     for ( 0 .. $rows ) {
-        push @$result, [ '.', map { '.' } @$series ];
+        push @$result, [ $bg_char, map { $bg_char } @$series ];
     }
 
     for my $row ( 0 .. $rows ) {
